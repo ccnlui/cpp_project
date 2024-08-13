@@ -1,0 +1,5 @@
+build/*
+.vscode/*
+
+# placeholder to preserve directory structure
+!*.placeholder.dir
