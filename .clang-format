@@ -1,3 +1,4 @@
 ---
 BasedOnStyle: WebKit
 AllowShortFunctionsOnASingleLine: Empty
+SpaceBeforeCpp11BracedList: false
