@@ -17,6 +17,7 @@ set(CMAKE_CXX_FLAGS "-Wall -Wextra")
 
 # Header Libraries
 include_directories("include/CLI11")
+include_directories("include/Catch2")
 
 # Create executable
 add_executable(main)
