@@ -17,13 +17,10 @@ $ tree -L 2
 ├── include
 │   └── doctest
 ├── README.md
-├── src
-│   ├── CMakeLists.txt
-│   ├── main_catch.cpp
-│   ├── main.cpp
-│   ├── main_doctest.cpp
-│   └── main_gtest.cpp
-└── vendor
+└── src
+    ├── CMakeLists.txt
+    ├── main.cpp
+    └── main_doctest.cpp
 ```
 
 ### Building
