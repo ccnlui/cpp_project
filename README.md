@@ -4,6 +4,7 @@ This is a template for starting a c++ project with common tools and libraries. M
 - c++20
 - cmake
 - clang-format
+- pthread ([link with cmake](https://stackoverflow.com/questions/1620918/cmake-and-libpthread))
 - [Catch2 v2](https://github.com/catchorg/Catch2/tree/v2.x) (header library)
 - [CLI11](https://github.com/CLIUtils/CLI11) (header library)
 - [doctest](https://github.com/doctest/doctest) (header library)

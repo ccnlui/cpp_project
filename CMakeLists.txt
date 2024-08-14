@@ -38,6 +38,11 @@ macro(googletest_add_test TESTNAME)
     set_target_properties(${TESTNAME} PROPERTIES FOLDER tests)
 endmacro()
 
+# Use pthread
+set(CMAKE_THREAD_PREFER_PTHREAD TRUE)
+set(THREADS_PREFER_PTHREAD_FLAG TRUE)
+find_package(Threads REQUIRED)
+
 # Create executable
 add_executable(main)
 
@@ -49,6 +54,10 @@ add_executable(main_doctest)
 
 # Create gtest executable
 googletest_add_test(main_gtest)
+
+# Create pthread executable
+add_executable(main_pthread)
+target_link_libraries(main_pthread Threads::Threads)
 
 # Source
 include_directories("src")

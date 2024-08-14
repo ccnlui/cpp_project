@@ -13,3 +13,7 @@ target_sources(main_gtest PRIVATE
 target_sources(main_doctest PRIVATE
                main_doctest.cpp
                )
+
+target_sources(main_pthread PRIVATE
+               main_pthread.cpp
+               )
