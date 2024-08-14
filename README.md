@@ -4,21 +4,17 @@ This is a template for starting a c++ project with common tools and libraries. M
 - c++20
 - cmake
 - clang-format
-- [Catch2](https://github.com/catchorg/Catch2) (header library)
-- [CLI11](https://github.com/CLIUtils/CLI11) (header library)
 
 
 ### Structure
 
 ```
+$ tree .
 .
 ├── build
 ├── CMakeLists.txt
 ├── include
-│   └── CLI11
-│       ├── CLI11.hpp
-│       └── README
-├── README
+├── README.md
 └── src
     ├── CMakeLists.txt
     └── main.cpp
