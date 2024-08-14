@@ -24,6 +24,7 @@ $ tree -L 2
 ├── README.md
 ├── src
 │   ├── CMakeLists.txt
+│   ├── main_catch.cpp
 │   ├── main.cpp
 │   ├── main_doctest.cpp
 │   └── main_gtest.cpp
