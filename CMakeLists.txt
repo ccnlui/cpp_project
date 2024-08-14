@@ -42,13 +42,13 @@ endmacro()
 add_executable(main)
 
 # Create catch2 executable
-googletest_add_test(main_catch)
+add_executable(main_catch)
+
+# Create doctest executable
+add_executable(main_doctest)
 
 # Create gtest executable
 googletest_add_test(main_gtest)
-
-# Create doctest executable
-googletest_add_test(main_doctest)
 
 # Source
 include_directories("src")
