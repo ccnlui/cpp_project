@@ -17,3 +17,7 @@ target_sources(main_doctest PRIVATE
 target_sources(main_pthread PRIVATE
                main_pthread.cpp
                )
+
+target_sources(main_concurrent PRIVATE
+               main_concurrent.cpp
+               )

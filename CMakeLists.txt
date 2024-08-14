@@ -19,6 +19,7 @@ set(CMAKE_CXX_FLAGS "-Wall -Wextra")
 include_directories("include/CLI11")
 include_directories("include/Catch2")
 include_directories("include/doctest")
+include_directories("include/concurrentqueue")
 
 # Google Test Library
 add_subdirectory("vendor/googletest-1.15.2" "vendor/googletest-1.15.2")
@@ -58,6 +59,10 @@ googletest_add_test(main_gtest)
 # Create pthread executable
 add_executable(main_pthread)
 target_link_libraries(main_pthread Threads::Threads)
+
+# Create concurrentqueue executable
+add_executable(main_concurrent)
+target_link_libraries(main_concurrent Threads::Threads)
 
 # Source
 include_directories("src")
