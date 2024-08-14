@@ -18,6 +18,7 @@ set(CMAKE_CXX_FLAGS "-Wall -Wextra")
 # Header Libraries
 include_directories("include/CLI11")
 include_directories("include/Catch2")
+include_directories("include/doctest")
 
 # Google Test Library
 add_subdirectory("vendor/googletest-1.15.2" "vendor/googletest-1.15.2")
@@ -40,8 +41,14 @@ endmacro()
 # Create executable
 add_executable(main)
 
-# Create test executable
-googletest_add_test(main_test)
+# Create catch2 executable
+googletest_add_test(main_catch)
+
+# Create gtest executable
+googletest_add_test(main_gtest)
+
+# Create doctest executable
+googletest_add_test(main_doctest)
 
 # Source
 include_directories("src")
